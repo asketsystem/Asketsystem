@@ -1,0 +1,52 @@
+{
+	"name": "theme-levelup",
+	"version": "0.1.2",
+	"displayName": "Level Up Theme Official",
+	"description": "➕ Official theme of Level Up Tutorials ➕",
+	"publisher": "leveluptutorials",
+	"icon": "images/logo.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/leveluptuts/level-up-vscode-theme"
+	},
+	"galleryBanner": {
+		"color": "#524763",
+		"theme": "dark"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"VSCode",
+		"Themes"
+	],
+	"engines": {
+		"vscode": "^1.15.0"
+	},
+	"scripts": {
+		"start": "nodemon --exec vsce package"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Level Up",
+				"uiTheme": "vs-dark",
+				"path": "./theme/levelup.json"
+			},
+			{
+				"label": "Level Up 2 Electric Boogaloo",
+				"uiTheme": "vs-dark",
+				"path": "./theme/two.json"
+			}
+		]
+	},
+	"dependencies": {
+		"nodemon": "^1.12.0",
+		"vsce": "^1.30.0"
+	},
+	"__metadata": {
+		"id": "ee3a0861-755c-4bd3-ad41-c15971910b83",
+		"publisherId": "fb53bca4-f5fc-423a-b52f-d17cb8c3d143",
+		"publisherDisplayName": "leveluptutorials"
+	}
+}
